@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.MyApplication" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/colorPrimaryVariant</item>
+        <item name="android:colorBackground">#121212</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="materialButtonStyle">@style/CustomButtonNight</item>
+    </style>
+
+    <style name="CustomButtonNight" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">#BB86FC</item>
+        <item name="android:textColor">#000000</item>
+        <item name="cornerRadius">20dp</item>
+        <item name="android:padding">12dp</item>
+    </style>
+
+</resources>
