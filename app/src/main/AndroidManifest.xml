@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
 
-        <!-- Pantalla inicial -->
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -22,27 +22,31 @@
             </intent-filter>
         </activity>
 
-        <!-- Menú principal -->
+
+        <activity
+            android:name=".loginActivity"
+            android:exported="true" />
+
+
         <activity
             android:name=".menuActivity"
             android:exported="true" />
 
-        <!-- Interfaz 1 -->
         <activity
             android:name=".interfaz1"
             android:exported="true" />
 
-        <!-- Interfaz 2 -->
+
         <activity
             android:name=".interfaz2"
             android:exported="true" />
 
-        <!-- Interfaz 3 -->
+
         <activity
             android:name=".interfaz3"
             android:exported="true" />
 
-        <!-- Interfaz 4 -->
+
         <activity
             android:name=".interfaz4"
             android:exported="true" />
@@ -50,3 +54,4 @@
     </application>
 
 </manifest>
+

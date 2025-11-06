@@ -9,10 +9,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
 
-        // Abrir directamente el menú
-        startActivity(new Intent(this, menuActivity.class));
+
+        startActivity(new Intent(this, loginActivity.class));
         finish();
     }
 }
