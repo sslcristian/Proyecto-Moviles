@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- TÍTULO -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MI HISTORIA"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#222"
+            android:layout_marginBottom="20dp" />
+
+        <!-- ========================================================= -->
+        <!-- ====================== CARD 1 =========================== -->
+        <!-- ========================================================= -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            app:strokeWidth="0dp"
+            android:backgroundTint="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- IMAGEN 1 (AHORA SÍ SE VE) -->
+                <ImageView
+                    android:id="@+id/ivCasa"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/casa_antes"
+                    android:contentDescription="Imagen casa" />
+
+                <LinearLayout
+                    android:padding="15dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- SUBTÍTULO -->
+                    <TextView
+                        android:text="Donde Vivíamos"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <!-- TEXTO -->
+                    <TextView
+                        android:text="Viví con mi familia en una invasión en el barrio Villa Rosa. Gracias a Dios nunca nos faltó nada y juntos salimos adelante."
+                        android:textSize="14sp"
+                        android:textColor="#555"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- ========================================================= -->
+        <!-- ====================== CARD 2 =========================== -->
+        <!-- ========================================================= -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            android:backgroundTint="#FFFFFF">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- IMAGEN 2 -->
+                <ImageView
+                    android:id="@+id/ivGrad"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/mi_graduacion" />
+
+                <LinearLayout
+                    android:padding="15dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- SUBTÍTULO -->
+                    <TextView
+                        android:text="Mi Graduación"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="#333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <!-- TEXTO -->
+                    <TextView
+                        android:text="Me gradué en el colegio Maiporé después de estudiar allí toda mi vida. Gracias a una beca pude continuar mis estudios."
+                        android:textSize="14sp"
+                        android:textColor="#555"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,29 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:padding="30dp"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#F3F4F6">
 
-    <EditText
-        android:id="@+id/txtUsuario"
-        android:hint="Usuario"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <EditText
-        android:id="@+id/txtContrasena"
-        android:hint="Contraseña"
-        android:inputType="textPassword"
+    <!-- TARJETA DEL LOGIN -->
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp" />
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:background="@drawable/bg_card"
+        android:elevation="10dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp">
 
-    <Button
-        android:id="@+id/btnLogin"
-        android:text="Iniciar sesión"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"/>
-</LinearLayout>
+        <!-- TÍTULO -->
+        <TextView
+            android:text="Bienvenido"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#111111"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- USUARIO -->
+        <EditText
+            android:id="@+id/txtUsuario"
+            android:hint="Usuario"
+            android:textColor="#000000"
+            android:textColorHint="#888888"
+            android:padding="14dp"
+            android:textSize="16sp"
+            android:background="@drawable/bg_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- CONTRASEÑA -->
+        <EditText
+            android:id="@+id/txtContrasena"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:textColor="#000000"
+            android:textColorHint="#888888"
+            android:padding="14dp"
+            android:textSize="16sp"
+            android:background="@drawable/bg_edittext"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- BOTÓN -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:text="Iniciar sesión"
+            android:textStyle="bold"
+            android:background="@drawable/bg_button"
+            android:layout_marginTop="25dp"
+            android:padding="14dp"
+            android:textColor="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>

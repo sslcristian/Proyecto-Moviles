@@ -2,7 +2,7 @@ package com.example.myapplication;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Button;
+import android.widget.LinearLayout;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class menuActivity extends AppCompatActivity {
@@ -10,16 +10,23 @@ public class menuActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.menu);
+        setContentView(R.layout.activity_menu);
 
-        Button btn1 = findViewById(R.id.btnInterfaz1);
-        Button btn2 = findViewById(R.id.btnInterfaz2);
-        Button btn3 = findViewById(R.id.btnInterfaz3);
-        Button btn4 = findViewById(R.id.btnInterfaz4);
+        LinearLayout btn1 = findViewById(R.id.btnSobreMi);
+        LinearLayout btn2 = findViewById(R.id.btnHistoria);
+        LinearLayout btn3 = findViewById(R.id.btnHobbies);
+        LinearLayout btn4 = findViewById(R.id.btnOpiniones);
 
-        btn1.setOnClickListener(v -> startActivity(new Intent(this, interfaz1.class)));
-        btn2.setOnClickListener(v -> startActivity(new Intent(this, interfaz2.class)));
-        btn3.setOnClickListener(v -> startActivity(new Intent(this, interfaz3.class)));
-        btn4.setOnClickListener(v -> startActivity(new Intent(this, interfaz4.class)));
+        btn1.setOnClickListener(v ->
+                startActivity(new Intent(this, SobreMiActivity.class)));
+
+        btn2.setOnClickListener(v ->
+                startActivity(new Intent(this, HistoriaActivity.class)));
+
+        btn3.setOnClickListener(v ->
+                startActivity(new Intent(this, HobbiesActivity.class)));
+
+        btn4.setOnClickListener(v ->
+                startActivity(new Intent(this, OpinionesActivity.class)));
     }
 }

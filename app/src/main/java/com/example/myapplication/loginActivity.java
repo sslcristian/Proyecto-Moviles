@@ -23,7 +23,7 @@ public class loginActivity extends AppCompatActivity {
             String pass = txtContrasena.getText().toString();
 
 
-            if (user.equals("admin") && pass.equals("1234")) {
+            if (user.equals("cristian") && pass.equals("1234")) {
                 Intent i = new Intent(loginActivity.this, menuActivity.class);
                 startActivity(i);
                 finish();

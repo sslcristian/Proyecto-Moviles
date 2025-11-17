@@ -7,6 +7,13 @@
     <color name="colorBackground">#F4F4F8</color>
     <color name="colorText">#1A1A1A</color>
 
+
     <color name="colorButton">#4B63FF</color>
     <color name="colorButtonText">#FFFFFF</color>
+    <color name="bg">#F7F7F7</color>
+    <color name="textPrimary">#1C1C1E</color>
+    <color name="textSecondary">#3A3A3C</color>
+    <color name="cardBg">#FFFFFF</color>
+    <color name="accent">#8E7DFF</color>  <!-- morado suave premium -->
+
 </resources>
